@@ -34,6 +34,4 @@ with open('green_vegetables.csv', 'w') as f:
 	writer = csv.writer(f)
 	writer.writerow(['name', 'color'])
 	for veg in greenVeg:
-		name = veg['name']
-		color = veg['color']
-		writer.writerow([name, color])
+		writer.writerow([veg['name'], veg['color']])
